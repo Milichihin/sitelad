@@ -133,13 +133,13 @@ h3 {
     }
 }
 
-//*-----hamburger width-----------
+/*-----hamburger width-----------
 @media (max-width: 450px) {
     li {
         font-size: 0.45rem;
     }
 }
---------hamburger width-----------*//
+--------hamburger width-----------*/
 
 
 /*-----------------start SLIDER-------------------------*/
