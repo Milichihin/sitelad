@@ -1,86 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Lviv Art Days</title>
-        <link rel="stylesheet" href="css/index.css">
-    </head>
-    <body>
-        <header>
-            <!-- Logo & menu including layers -->
-            <img src="img/icon-lad-width.png" alt="lviv art days logo" width="200">
-            <!-- <img src="img/back-menu-violet-opacity70perc.png" alt="background for menu 70% opacity">
-            <img src="img/back-menu-violet-opacity12perc.png" alt="background for menu 12% opacity when mouse over">-->
-            <ul>
-                <li>
-                    <a href="index.html">MAIN</a>
-                </li>
-                <li>
-                    <a href="about.html">ABOUT</a>
-                </li>
-                <li>
-                    <a href="artists.html">ARTISTS</a>
-                </li>
-                <li>
-                    <a href="contacts.html">CONTACTS</a>
-                </li>
-            </ul>
-        </header>
-        <main>
-            <!-- Image & links, Text on poster needs a border -->
-            <img src=img/photo-head-beig.jpg alt="Carousel photo of first model with violet head" width="200">
-            <img src=img/photo-head-green.jpg alt="Carousel photo of second model with violet head" width="200">
-            <img src=img/photo-head-viol.jpg alt="Carousel photo of third model with violet head" width="200">
-            <p>
-                <a href="about.html">ABOUT</a>
-            </p>
-            <a href="about.html">
-                <img src="img/background-violet-opacity70perc.png" alt="Background when mouse over" width="200">
-            </a>
-            <a href="about.html">
-                <img src="img/poster-about-sq.jpg" alt="Hall of Exhibition" width="200">
-            </a>
-            <p>
-                <a href="artists.html">ARTISTS</a>
-            </p>
-            <a href="artists.html">
-                <img src="img/background-violet-opacity70perc.png" alt="Background when mouse over" width="200">
-            </a>
-            <a href="artists.html">
-                <img src=img/poster-artists-sq.jpg alt="Photo of art-work with gypsum head" width="200">
-            </a>
-            <p>
-                <a href="contacts.html">CONTACTS</a>
-            </p>
-            <a href="contacts.html">
-                <img src="img/background-violet-opacity70perc.png" alt="Background when mouse over" width="200">
-            </a>
-            <a href="contacts.html">
-                <img src="img/poster-contacts-sq.jpg" alt="Photo of command" width="200">
-            </a>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lviv Art Days</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header>
+        <!-- Logo & menu including layers -->
+        <img class="header-logo" src="img/icon-lad-width.png" alt="lviv art days logo" ">
+            <!-- <img src="img/back-menu-violet-opacity70perc.png " alt="background for menu 70%opacity ">
+                <img src="img/back-menu-violet-opacity12perc.png " alt="background for menu 12%opacity when mouse over ">-->
+                <ul class="align">
+                    <li class="fix-menu ">
+                        <a href="index.html ">MAIN</a>
+                    </li>
+                    <li>
+                        <a href="about.html ">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="artists.html ">ARTISTS</a>
+                    </li>
+                    <li>
+                        <a href="contacts.html ">CONTACTS</a>
+                    </li>
+                </ul>
+    </header>
+            <main class="grid-zone">
+                <!-- Image & links, Text on poster needs a border -->
+                <section>
+                    <div class="carousel-wrapper">
+                      <span id="item-1"></span>
+                      <span id="item-2"></span>
+                      <span id="item-3"></span>
+                        <div class="carousel-item item-1">
+                            <a class="arrow arrow-prev" href="#item-3"></a>
+                              <a class="arrow arrow-next" href="#item-2"></a>
+                        </div>
+                        <div class="carousel-item item-2">
+                            <a class="arrow arrow-prev" href="#item-1"></a>
+                            <a class="arrow arrow-next" href="#item-3"></a>
+                        </div>
+                        <div class="carousel-item item-3">
+                            <a class="arrow arrow-prev" href="#item-2"></a>
+                            <a class="arrow arrow-next" href="#item-1"></a>
+                         </div>
+                    </div>
+                </section>
+                <section>
+                        <div class="about">
+                            <h3><a href="about.html">ABOUT</a></h3>
+                        </div>
+                </section>
+                <section>
+                        <div class="artists">
+                            <h3><a href="artists.html">ARTISTS</a></h3>
+                        </div>
+                </section>
+                <section>
+                        <div class="contacts">
+                            <h3><a href="contacts.html">CONTACTS</a></h3>
+                        </div>
+                </section>
         </main>
         <footer>
             <!-- Icons, Copyright. Menu  -->
-            <a href="https://www.instagram.com/lvivartdays">
-                <img src="img/icon-insta-viol.png" alt="instagram icon violet" width="25">
+            <div class="footer-icons">
+            <a href="https://www.instagram.com/lvivartdays ">
+                <img src="img/icon-insta-viol.png " alt="instagram icon violet " width="25 ">
             </a>
-            <a href="https://www.facebook.com/lvivartdays">
-                <img src="img/icon-fb-viol.png" alt="facebook icon violet" width="25">
+            <a href="https://www.facebook.com/lvivartdays ">
+                <img src="img/icon-fb-viol.png " alt="facebook icon violet " width="25 ">
             </a>
-            <a href="http://m.me/lvivartdays">
-                <img src="img/icon-msg-viol.png" alt="messanger icon violet" width="25">
+            <a href="http://m.me/lvivartdays ">
+                <img src="img/icon-msg-viol.png " alt="messanger icon violet " width="25 ">
             </a>
+            </div>
+            <div class="roboto">
             <p>© 2018 milichihin</p>
             <p>
-                <a href="index.html">Main</a>
+                <a href="index.html ">Main</a>
                 | <a href=about.html>About</a>
                 | <a href=artists.html>Artists</a>
                 | <a href=contacts.html>Mail Us</a>
                 | Privacy
             </p>
-            <br>
+            </div>
+            </div>
         </footer>
     </body>
-</html>
+    </html>

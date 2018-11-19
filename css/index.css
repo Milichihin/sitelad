@@ -1,10 +1,237 @@
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P')
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto');
 
-:root {
-    font-sise: 20px;
-    font-family: 'Press Start 2P', sans-serif;
-
-:root {
-    font-sise: 20px;
-    font-family: 'Press Start', sans-serif;
+body {
+    max-width: 600px;
+    margin: auto;
 }
+
+header  {
+	display: flex;
+}
+
+
+
+.header-logo {
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 10px;
+}
+
+ul {
+	display: flex;
+	flex: 1;
+	margin: 0;
+	padding: 0;
+	}
+
+li {
+	display: inline-block;
+	flex: 1;
+	text-align: center;
+	height: 60px;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 0.58rem;
+}
+
+.fix-menu {
+	background-color: #9A8CB4;
+}
+
+.fix-menu a {
+	color: white;
+}
+
+
+header a {
+	text-decoration: none;
+	color: #6F5C95;
+}
+
+ul :nth-child(1n+2):hover {
+	background-color: #EBE8F0;
+	color: white;
+}
+
+
+
+h3 a {
+	text-decoration: none;
+	color: white;
+}
+
+h3 {
+	display: block;
+	border-style: solid;
+	padding: 3px;
+	min-width: 150px;
+	border-radius: 4px;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 1rem;
+	color: white;
+	text-align: center;
+}
+
+.about {
+	display: flex;
+	height: 300px;
+	align-items: center;
+	justify-content: space-around;
+	background:url(../img/poster-about-sq.jpg);
+	background-size:cover;
+}
+
+.artists {
+	display: flex;
+	height: 300px;
+	align-items: center;
+	justify-content: space-around;
+	background:url(../img/poster-artists-sq.jpg);
+	background-size:cover;
+}
+
+.contacts {
+	display: flex;
+	height: 300px;
+	align-items: center;
+	justify-content: space-around;
+	background:url(../img/poster-contacts-sq.jpg);
+	background-size:cover;
+}
+
+
+@media (max-width: 500px) {
+    .grid-zone {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 10px;
+    }
+}
+
+@media (min-width: 500px) {
+    .grid-zone {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/*----------------------------SLIDER*------------------------------------*/
+/*----------------------------SLIDER*------------------------------------*/
+/*----------------------------SLIDER*------------------------------------*/
+/*----------------------------SLIDER*------------------------------------*/
+/*----------------------------SLIDER*------------------------------------*/
+
+
+.carousel-wrapper{
+  display: flex;
+  height:300px;
+  position:relative;
+  margin:0;
+}
+.carousel-item{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:25px 50px;
+  opacity:0;
+  transition: all 0.5s ease-in-out;
+}
+.arrow{
+ 	border: solid white;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 20px;
+    opacity: 0.8
+}
+
+.arrow-prev{
+  left:20px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(135deg);
+}
+ 
+.arrow-next{
+  right:20px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(-45deg);
+  }
+
+
+@media (max-width: 480px) {
+      .arrow, .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+      }
+    }
+}
+
+/*Select every element*/
+[id^="item"] {
+    display: none;
+  }
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+  background:url(../img/photo-head-beig.jpg);
+  background-size:cover;
+  }
+.item-2{
+  background:url(../img/photo-head-green.jpg);
+   background-size:cover;
+}
+.item-3{
+  background:url(../img/photo-head-viol.jpg);
+   background-size:cover;
+}
+
+*:target ~ .item-1 {
+    opacity: 0;
+  }
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+  }
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+  }
+}
+
+/*-------------------------SLIDER---------------------*/
+/*-------------------------SLIDER---------------------*/
+/*-------------------------SLIDER---------------------*/
+/*-------------------------SLIDER---------------------*/
+
+.footer-icons {
+	display: flex;
+	alignment-baseline: central
+}
+
+.roboto a {
+	text-decoration: none
+}
+
+footer .roboto {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+	color: #6F5C95;
+	text-align: center;
+}
+
+
+footer p {
+  margin: 0
+}
+
+
+
+
+
+
