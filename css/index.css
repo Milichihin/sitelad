@@ -7,15 +7,21 @@ body {
 
 header  {
 	display: flex;
+	align-items: center;
+    justify-content: center;
+    height: 70px; 
 }
 
-
+.align li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+}
 
 .header-logo {
-    height: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-bottom: 10px;
+    margin-left: 35px;
+    margin-right: 41.6px;
 }
 
 ul {
@@ -100,7 +106,7 @@ h3 {
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .grid-zone {
         display: grid;
         grid-template-columns: 1fr;
@@ -108,19 +114,35 @@ h3 {
     }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {
     .grid-zone {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 }
 
+@media (max-width: 540px) {
+    li {
+        font-size: 0.5rem;
+    }
+}
 
-/*----------------------------SLIDER*------------------------------------*/
-/*----------------------------SLIDER*------------------------------------*/
-/*----------------------------SLIDER*------------------------------------*/
-/*----------------------------SLIDER*------------------------------------*/
-/*----------------------------SLIDER*------------------------------------*/
+@media (max-width: 490px) {
+    li {
+        font-size: 0.45rem;
+    }
+}
+
+//*-----hamburger width-----------
+@media (max-width: 450px) {
+    li {
+        font-size: 0.45rem;
+    }
+}
+--------hamburger width-----------*//
+
+
+/*-----------------start SLIDER-------------------------*/
 
 
 .carousel-wrapper{
@@ -204,10 +226,8 @@ h3 {
   }
 }
 
-/*-------------------------SLIDER---------------------*/
-/*-------------------------SLIDER---------------------*/
-/*-------------------------SLIDER---------------------*/
-/*-------------------------SLIDER---------------------*/
+/*-------------------------end SLIDER---------------------*/
+
 
 .footer-icons {
 	display: flex;
