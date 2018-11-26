@@ -53,11 +53,10 @@ header a {
 	color: #6F5C95;
 }
 
-ul.align :nth-child(1n+2):hover {
+ul.align :nth-child(1n+1):hover {
 	background-color: #EBE8F0;
 	color: white;
 }
-
 
 
 h3 a {
