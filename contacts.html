@@ -1,80 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Contacts</title>
-    </head>
-    <body>
-        <header>
-            <!-- Logo & menu including layers -->
-            <img src="img/icon-lad-width.png" alt="lviv art days logo" width="200">
-            <!-- <img src="img/back-menu-violet-opacity70perc.png" alt="background for menu 70% opacity">
-            <img src="img/back-menu-violet-opacity12perc.png" alt="background for menu 12% opacity when mouse over">-->
-            <nav>
-                <a href="index.html">MAIN</a>
-                <a href="about.html">ABOUT</a>
-                <a href="artists.html">ARTISTS</a>
-                <a href="contacts.html">CONTACTS</a>
-            </nav>
-        </header>
-        <main>
-            <!-- contacts, Text on poster needs a border -->
-            <img src="img/head-poly-date.jpg" alt="low polygon head and dates of the event" width="200">
-            <img src="img/background-violet-opacity70perc.png" alt="Background" width="200">
-            <a href="https://www.instagram.com/lvivartdays">
-                <img src="img/icon-insta-wh.png" alt="instagram icon white" width="25">
-            </a>
-            <a href="https://www.facebook.com/lvivartdays">
-                <img src="img/icon-fb-wh.png" alt="facebook icon white" width="25">
-            </a>
-            <a href="http://m.me/lvivartdays">
-                <img src="img/icon-msg-wh.png" alt="messanger icon white" width="25">
-            </a>
-            <p>
-                Coordinator <br>(partners, sponsorship)
-            </p>
-            <p>
-                Oleksandr Plashchenko <br>+380 (50) 370 30 74
-            </p>
-            <p>Coordinator (artists)</p>
-            <p>
-                Inna Puzanova <br>+380 (97) 337 03 30
-            </p>
-            <!-- form -->
-            <p>MAIL US</p>
-            <form method="post" action="https://formspree.io/milichihin@gmail.com">
-                <input type="text" name="name" placeholder="Your name"/>
-                <br>
-                <input type="email" name="email" placeholder="Email Address"/>
-                <br>
-                <textarea rows="5" cols="21" placeholder="Your message" name="message"></textarea>
-                <br>
-                <input type="submit" value="SEND"/>
-            </form>
-            <p>CONTACTS</p>
-            <img src="img/poster-contacts-sq.jpg" alt="command" width="200">
-        </main>
-        <footer>
-            <!-- Icons, Copyright. Menu  -->
-            <a href="https://www.instagram.com/lvivartdays">
-                <img src="img/icon-insta-viol.png" alt="instagram icon violet" width="25">
-            </a>
-            <a href="https://www.facebook.com/lvivartdays">
-                <img src="img/icon-fb-viol.png" alt="facebook icon violet" width="25">
-            </a>
-            <a href="http://m.me/lvivartdays">
-                <img src="img/icon-msg-viol.png" alt="messanger icon violet" width="25">
-            </a>
-            <p>© 2018 milichihin</p>
-            <nav>
-                <a href="index.html">Main</a>
-                | <a href=about.html>About</a>
-                | <a href=artists.html>Artists</a>
-                | <a href=contacts.html>Mail Us</a>
-                | Privacy
-            </nav>
-        </footer>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/contacts.css">
+</head>
+
+<body>
+      <div class="common">
+            <div class="header">
+                  <div><img src="img/icon-lad-width.png" alt="lviv art days logo" height="50"></div>
+                  <a href="index.html"><div class="main-menu">MAIN</div></a>
+                  <a href="about.html"><div class="main-menu">ABOUT</div></a>
+                  <a href="artists.html"><div class="main-menu">ARTISTS</div></a>
+                  <a href="contacts.html"><div class="fix-menu">CONTACTS</div></a>
+            </div>
+            <main class="main">
+                <!-- contacts, Text on poster needs a border -->
+                <div class="adv"></div>
+                <div class="phones">
+                    <div class="social">
+                        <a href="https://www.instagram.com/lvivartdays"><img src="img/icon-insta-wh.png" alt="instagram icon white"></a>
+                        <a href="https://www.facebook.com/lvivartdays"><img src="img/icon-fb-wh.png" alt="facebook icon white"></a>
+                        <a href="http://m.me/lvivartdays"><img src="img/icon-msg-wh.png" alt="messanger icon white"></a>
+                    </div>
+                    <p>Coordinator <br>(partners, sponsorship)</p>
+                    <h4>Oleksandr Plashchenko <br>+380 (50) 370 30 74</h4>
+                    <p>Coordinator (artists)</p>
+                    <h4>Inna Puzanova <br>+380 (97) 337 03 30</h4>
+                </div>
+                <!-- form -->
+                <feedback class="form">
+                    <h4>MAIL US</h4>
+                    <div class="fields">
+                        <form method="post" action="https://formspree.io/milichihin@gmail.com">
+                                <input type="text" name="name" placeholder="Your name" />
+                                <input type="email" name="email" placeholder="Email Address" />
+                                <textarea rows="5" cols="21" placeholder="Your message" name="message"></textarea>
+                                <input type="submit" class="button" value="SEND" />
+                        </form>
+                    </div>
+                </feedback>
+                <contacts class="staff">
+                    <h3>CONTACTS</h3>
+                </contacts>
+            </main>
+            <footer class=footer>
+                <div class="social">
+                    <div>
+                        <a href="https://www.instagram.com/lvivartdays"><img src="img/icon-insta-viol.png" alt="instagram icon violet" width="27"></a>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/lvivartdays"><img src="img/icon-fb-viol.png" alt="facebook icon violet" width="27"></a>
+                    </div>
+                    <div>
+                        <a href="http://m.me/lvivartdays"><img src="img/icon-msg-viol.png" alt="messanger icon violet" width="27"></a>
+                    </div>
+                </div>
+                <div class="bottom-menu">
+                    <p><a href="index.html">Main</a></p> |
+                    <p><a href=about.html>About</a></p> |
+                    <p><a href=artists.html>Artists</a></p> |
+                    <p><a href=contacts.html>Mail Us</a></p> |
+                    <p><a href=>Privacy</a></p>
+                </div>
+                <div class="copyright">
+                    <p>develop&design: milichihin</p>
+                </div>
+            </footer>
+      </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+</body>
 </html>
