@@ -95,7 +95,7 @@ section-posters:hover .hover-img {
 	height: 300px;
 	align-items: center;
 	justify-content: space-around;
-	background: url(/img/poster-about-sq.jpg);
+	background: url(../img/poster-about-sq.jpg);
 	position: relative;
 	background-size:cover;
 }
