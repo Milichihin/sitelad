@@ -1,4 +1,6 @@
 // Create a clone of the menu, right next to original.
+
+/*
 $('.header').addClass('original').clone().insertAfter('.header').addClass('cloned').css('position','fixed').css('top','0').css('margin-top','0').css('z-index','500').removeClass('original').hide();
 
 scrollIntervalID = setInterval(stickIt, 10);
@@ -25,3 +27,16 @@ function stickIt() {
     $('.original').css('visibility','visible');
   }
 }  
+*/
+/*
+$(document).ready(function() {
+    $('.submenu.animated').hover(
+     function() {
+      $(this).addClass('fadeInDown'); // Добавляем класс bounce
+     },
+     function() {
+      $(this).removeClass('fadeInDown'); // Убираем класс
+     }
+    )})
+    */
+    
