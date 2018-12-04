@@ -143,6 +143,7 @@ h3 {
 	font-size: 1rem;
 	color: white;
 	text-align: center;
+	z-index: 3;
 }
 
 
@@ -277,7 +278,7 @@ h3 {
         background-color: rgba(255, 255, 255, 0.8);
         position: fixed;
         top: 0;
-        z-index: 1;
+        z-index: 4;
     }
     .mob-menu img {
         display: flex;
@@ -300,7 +301,7 @@ h3 {
         margin: 0;
         padding: 0;
         list-style: none;
-        z-index: 100;
+        z-index: 4;
     }
     ul:after {
         display: block;
