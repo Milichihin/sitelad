@@ -11,6 +11,11 @@ body {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr;    
     background-color: rgba(255, 255, 255, 0.80);
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    max-width: 600px;
+    width: 100%;
 }
 
 .header img {
@@ -56,6 +61,7 @@ a {
 .main {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 70px;
 }
 
 .text-area {
@@ -83,6 +89,7 @@ a {
 	justify-content: space-around;
 	background:url(../img/poster-about-sq.jpg);
 	background-size:cover;
+	background-position: center top;
 }
 
 h3 {
@@ -181,6 +188,7 @@ h3 {
     .about {
     background:url(../img/poster-about-rect.jpg);
 	background-size:cover;
+	background-position: center top;
     }
 }
 
@@ -220,6 +228,9 @@ h3 {
         grid-template-columns: 1fr 3fr 150px;
         padding-left: 20px;
         background-color: rgba(255, 255, 255, 0.8);
+        position: fixed;
+        top: 0;
+        z-index: 1;
     }
     .mob-menu img {
         display: flex;
@@ -369,66 +380,82 @@ h3 {
     opacity: 1;
     background:url(../img/about1-min.jpg);
     background-size:cover;
+    background-position: center top;
   }
 .item-2{
    background:url(../img/about2-min.jpg);
    background-size:cover;
+   background-position: center top;
 }
 .item-3{
    background:url(../img/about3-min.jpg);
    background-size:cover;
+   background-position: center top;
 }
 .item-4{
    background:url(../img/about4-min.jpg);
    background-size:cover;
+   background-position: center top;
 }
 .item-5{
    background:url(../img/about5-min.jpg);
    background-size:cover;
+   background-position: center top;
 }
 .item-6{
    background:url(../img/about6-min.jpg);
    background-size:cover;
+   background-position: center top;
 }
 .item-7{
    background:url(../img/about7-min.jpg);
    background-size:cover;
+   background-position: center top;
 }
 .item-8{
    background:url(../img/about8-min.jpg);
    background-size:cover;
+   background-position: center top;
 }
 .item-9{
    background:url(../img/about9-min.jpg);
    background-size:cover;
+   background-position: center top;
 }
 .item-10{
    background:url(../img/about10-min.jpg);
    background-size:cover;
+   background-position: center top;
 }
 .item-11{
    background:url(../img/about11-min.jpg);
    background-size:cover;
+   background-position: center top;
 }
 .item-12{
    background:url(../img/about12-min.jpg);
    background-size:cover;
+   background-position: center top;
 }
 .item-13{
    background:url(../img/about13-min.jpg);
    background-size:cover;
+   background-position: center top;
 }
 .item-14{
    background:url(../img/about14-min.jpg);
    background-size:cover;
+   background-position: center top;
 }
 .item-15{
    background:url(../img/about15-min.jpg);
    background-size:cover;
+   background-position: center top;
 }
 .item-16{
    background:url(../img/about16-min.jpg);
    background-size:cover;
+   background-position: center top;
 }
 
 *:target ~ .item-1 {

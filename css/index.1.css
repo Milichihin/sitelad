@@ -13,13 +13,12 @@ body {
     background-color: rgba(255, 255, 255, 0.80);
     position: fixed;
     top: 0;
-    z-index: 4;
+    z-index: 1;
     max-width: 600px;
     width: 100%;
 }
 
 .header img {
-    padding: 10px 0 10px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,7 +42,7 @@ a {
     color: white;
 }
 
-.fix-menu a {
+.header .fix-menu a {
     text-decoration: none;
     color: white;
 }
@@ -104,7 +103,6 @@ section-posters:hover .hover-img {
 	background: url(../img/poster-about-sq.jpg);
 	position: relative;
 	background-size:cover;
-	background-position: center top;
 }
 
 
@@ -116,7 +114,6 @@ section-posters:hover .hover-img {
 	background: url(../img/poster-artists-sq.jpg);
 	position: relative;
 	background-size:cover;
-	background-position: center top;
 }
 
 .contacts {
@@ -127,7 +124,6 @@ section-posters:hover .hover-img {
 	background:url(../img/poster-contacts-sq.jpg);
 	position: relative;
 	background-size:cover;
-	background-position: center top;
 }
 
 
@@ -221,7 +217,6 @@ section-posters:hover .hover-img {
     .left-bottom {
     background:url(../img/poster-artists-rect.jpg);
 	background-size:cover;
-	background-position: center top;
     }
 }
 
@@ -244,7 +239,7 @@ section-posters:hover .hover-img {
         background-color: rgba(255, 255, 255, 0.8);
         position: fixed;
         top: 0;
-        z-index: 100;
+        z-index: 1;
     }
     .mob-menu img {
         display: flex;
@@ -267,6 +262,7 @@ section-posters:hover .hover-img {
         margin: 0;
         padding: 0;
         list-style: none;
+        z-index: 100;
     }
     ul:after {
         display: block;
@@ -329,96 +325,28 @@ section-posters:hover .hover-img {
 /*------------------------------------------------*/
 
 
-/*-----------------start SLIDER-------------------------*/
 
 
-.carousel-wrapper{
-  display: flex;
-  height:300px;
-  position:relative;
-  margin:0;
-}
-.carousel-item{
-  position:absolute;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  padding:25px 50px;
-  opacity:0;
-  transition: all 0.5s ease-in-out;
-}
-.arrow{
- 	border: solid #9A8CB4;
-    border-width: 0 5px 5px 0;
-    display: inline-block;
-    padding: 20px;
-    opacity: 0.5;
-    transition: opacity 0.3s;
+.carousel-inner .d-block {
+    display: flex;
+    height: 300px;
+    width: 100%;
+	align-items: center;
 }
 
-.arrow:hover{
-    opacity: 1;
+
+*, ::after, ::before {         /*this global bootstrap's value has been canceled*/
+    box-sizing: unset;
 }
 
-.arrow-prev{
-  left:20px;
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%) rotate(135deg);
+/*.carousel-control-prev-icon {
+    background-image: url(../img/icon-single-cursor-left.png);
+    height: 95px;
+    width: 53px;
 }
- 
-.arrow-next{
-  right:20px;
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%) rotate(-45deg);
-  }
-
-
-@media (max-width: 480px) {
-      .arrow, .arrow {
-        background-size: 10px;
-        background-position: 10px 50%;
-      }
+.carousel-control-next-icon {
+    background-image: url(../img/picon-single-cursor-right.png);
+    height: 95px;
+    width: 53px;
 }
-
-/*Select every element*/
-[id^="item"] {
-    display: none;
-  }
-
-.item-1 {
-    z-index: 2;
-    opacity: 1;
-  background:url(../img/photo-head-beig.jpg);
-  background-size:cover;
-  background-position: center top;
-  }
-.item-2{
-   background:url(../img/photo-head-green.jpg);
-   background-size:cover;
-   background-position: center top;
-}
-.item-3{
-   background:url(../img/photo-head-viol.jpg);
-   background-size:cover;
-   background-position: center top;
-}
-
-*:target ~ .item-1 {
-    opacity: 0;
-  }
-
-#item-1:target ~ .item-1 {
-    opacity: 1;
-  }
-
-#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
-    z-index: 3;
-    opacity: 1;
-}
-
-/*-------------------------end SLIDER---------------------*/
-
-
+*/

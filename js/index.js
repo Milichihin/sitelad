@@ -32,7 +32,7 @@ function stickIt() {
 $(document).ready(function() {
     $('.submenu.animated').hover(
      function() {
-      $(this).addClass('fadeInDown'); // Добавляем класс bounce
+      $(this).addClass('fadeInDown'); // Добавляем класс 
      },
      function() {
       $(this).removeClass('fadeInDown'); // Убираем класс
