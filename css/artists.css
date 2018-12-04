@@ -227,8 +227,18 @@ h3 {
     top: 0;
     margin-bottom: 800px;
     }
+    
 .righ-art {
 margin-top: -800px;
+}
+
+.sticky-strip {
+    display: block;
+    background-color: white;/*
+    background: linear-gradient(to bottom, white, transparent );
+    -webkit-background: linear-gradient(to bottom, white, transparent );*/
+    height: 10px;
+    opacity: 0.8;
 }
 
 
@@ -240,6 +250,9 @@ margin-top: -800px;
     }
     .righ-art {
     margin-top: 0;
+    }
+    .sticky-strip {
+    display: none;
     }
 }
 
