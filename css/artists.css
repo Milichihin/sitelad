@@ -79,6 +79,14 @@ a {
     size: auto auto;
 }
 
+p::selection {
+  background: #EAE7EF;
+}
+
+p::-webkit-selection {
+  background: #EAE7EF;
+}
+
 .righ-art a {
     padding: 0;
     transition: all .2s;

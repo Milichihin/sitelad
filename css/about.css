@@ -82,6 +82,14 @@ a {
     margin: 10px 0 10px 0;
 }
 
+p::selection {
+  background: #EAE7EF;
+}
+
+p::-webkit-selection {
+  background: #EAE7EF;
+}
+
 
 .about {
     display: flex;

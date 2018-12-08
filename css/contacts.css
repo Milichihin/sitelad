@@ -110,6 +110,7 @@ a {
 	margin: 0 0 0 0;
 }
 
+
 .form {
     display: grid;
     grid-template-rows: 1fr 5fr;
@@ -124,6 +125,14 @@ a {
     align-self: end;
     margin: 0 0 10px 0;
     font-size: 0.8rem;
+}
+
+h4::selection, p::selection, a::selection {
+  background: #EAE7EF;
+}
+
+h4::selection, p::selection, a::selection {
+  background: #EAE7EF;
 }
 
 .fields form {

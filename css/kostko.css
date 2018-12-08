@@ -99,6 +99,15 @@ h4 {
 	padding: 0 20px 0 20px;
 }
 
+p::selection {
+  background: #EAE7EF;
+}
+
+p::-webkit-selection {
+  background: #EAE7EF;
+}
+
+
 .navi-art {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;  
