@@ -314,6 +314,8 @@ section-posters:hover .hover-img {
         background-color: rgba(255, 255, 255, 0.4);
         text-decoration: none;
         transition: all 0.5s;
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
     }
     ul.submenu > li > a:hover {
         background-color: #EAE7EF;
