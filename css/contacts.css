@@ -154,6 +154,7 @@ h4::selection, p::selection, a::selection {
 	border-color: #b2a6c4;
 	text-align: center;
 	margin: 2px 2px 2px 2px;
+    color: #ffff;
 	-webkit-appearance: none;
 }
 
@@ -179,7 +180,7 @@ h4::selection, p::selection, a::selection {
     background-color: #9283AB;
     font-family: 'Roboto', sans-serif;
 	font-size: 0.7rem;
-	color: #7f6f99;
+	color: #ffff;
 	text-align: center;
 	margin: 2px 2px 2px 2px;
 	-webkit-appearance: none;
@@ -361,7 +362,7 @@ h3 {
         background-color: white;
         font-family: 'Roboto', sans-serif;
     	font-size: 0.7rem;
-    	color: #7f6f99;
+    	color: #b2a6c4;
     	margin-bottom: 10px;
     }
     .button {
